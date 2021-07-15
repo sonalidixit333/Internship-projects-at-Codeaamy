@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+
+
+  }
+  .wrap{
+	  overflow-x: hidden;
+	  width: 100vw;
+  }
+
+.navbar{
+    font-family: 'Share Tech Mono', monospace;
+}
+.navbar .navbar-brand,
+.navbar .navbar-text {
+  color: #d11d1d;
+}
+
+/* change the link color */
+.navbar .navbar-nav .nav-link {
+  color:#d11d1d;
+}
+
+/* change the color of active or hovered links */
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:focus .nav-link,
+.navbar .nav-item:hover .nav-link {
+  color: #ae0000;
+  text-decoration: underline;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    background:url(/images/1.png)no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    background-position:top center;
+    background-attachment: fixed;
+    
+}
+.home::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+.home h1{
+    padding-top: 20vh;
+    font-size: 30px; color:white;
+}
+.home h2{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+.home p{
+    font-size: 20px; color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+.about{
+    width: 100vw;
+    height: auto;
+    font-size: 20px;
+    
+}
+
+.content{
+    width: 100vw;
+    height:auto;
+    position: top center;
+    background:#ae0000;
+    color: white;
+    padding: 20px;
+    
+}
+.content h4{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+ .img{
+     margin:30px;
+    width:auto;
+    height: 40vh;
+}
+.img-1{
+    margin:30px;
+    width:50vw;
+    height: auto;
+   
+}
+.imgs img{
+    transition: ease-in-out 1s;
+}
+.imgs img:hover{
+    transform: scale(1.2);
+}
+img:hover{
+    transition: ease-in-out transform 1.5s;
+    transform: scale(1.1);
+}
+.syllabus{
+    position: relative;
+}
+.syllabus-text{
+    width:100vw;
+    height: auto;
+}
+.syllabus-text li{
+    list-style: none;
+}
+.syllabus-text h3{
+    font-size: 22px;
+}
+.syllabus-text li{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    background-position:center;
+    background:url("/images/codeaamy\ footer.png");
+    background-size: cover;
+
+  }
+  .services-1{
+      /* background: peru; */
+      margin-top: -75px;
+  }
+.footer{
+    padding: 20px;
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    background-position:center;
+    background:url("/images/codeaamy\ footer.png");
+    background-size: cover;
+
+  }
+.footer p{
+    color:white;
+}
+.footer h3{
+    color:white;
+}
+.footer h3:hover{
+    color:gray;
+}
+.footer li{
+    list-style: none;
+    color:white;
+}
+.footer li:hover{
+    color:gray;
+}
+.footer li a{
+    text-decoration: none;
+    color:white;
+}
+.footer li a:hover{
+    color:black;
+}
+.foot li{
+    margin: 7px;
+}
+.icons li{
+    margin: 7px;
+}
+.icons  img{
+    filter: grayscale(2);
+transition: .3s ease filter;
+}
+.icons li:hover img{
+    filter: grayscale(0);
+}
+
+@media (min-width:765px){
+
+    .navbar{
+        z-index: 1000;   
+        justify-content: space-between;
+        height: 60px;
+        width: 100vw;
+        }
+        .collapse{
+            margin-left: 38%;
+        }
+        .navbar .navbar-brand,
+        .navbar .navbar-text {
+          color: #d11d1d;
+          font-size: 20px;
+        }
+        
+        /* change the link color */
+        .navbar .navbar-nav .nav-link {
+          color:#d11d1d;
+          font-size: 20px;
+        }
+        
+        /* change the color of active or hovered links */
+        .navbar .nav-item.active .nav-link,
+        .navbar .nav-item:focus .nav-link,
+        .navbar .nav-item:hover .nav-link {
+          color: #ae0000;
+          text-decoration: underline;
+        }
+        .home{
+            width: 100%;
+            height: 100vh;
+            background:url(/images/1.png)no-repeat;
+            background-size: cover;
+            z-index: 1;
+            position: relative;
+            background-position:top center;
+            background-attachment: fixed;
+            
+        }
+        .home::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: .7;
+            z-index: -1;
+        }
+        
+        .home h1{
+            font-size: 40px; color:white;
+        }
+        .home h2{
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .home p{
+            font-size: 20px; color:white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .about{
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            
+        }
+        
+        .content{
+            width: 100vw;
+            height:auto;
+            position: top center;
+            background:#ae0000;
+            color: white;
+            
+        }
+        .content h4{
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+         .img{
+            width:auto;
+            height: 60vh;
+        }
+        .img-1{
+            width:30vw;
+            height: auto;
+           
+        }
+        .imgs img{
+            transition: ease-in-out 1s;
+        }
+        .imgs img:hover{
+            transform: scale(1.2);
+        }
+        img:hover{
+            transition: ease-in-out transform 1.5s;
+            transform: scale(1.1);
+        }
+        .syllabus{
+            position: relative;
+        }
+        .syllabus-text{
+            width:100vw;
+            height: auto;
+        }
+        .syllabus-text li{
+            list-style: none;
+        }
+        .syllabus-text h3{
+            font-size: 35px;
+        }
+        .syllabus-text li{
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .footer{
+            /* position: relative; */
+            width: 100%;
+            height: auto;
+            /* position: relative; */
+            background-position:center;
+            background:url("/images/codeaamy\ footer.png");
+            background-size: cover;
+        
+          }
+        .footer p{
+            color:white;
+        }
+        .footer h3{
+            color:white;
+        }
+        .footer h3:hover{
+            color:gray;
+        }
+        .footer li{
+            list-style: none;
+            color:white;
+        }
+        .footer li:hover{
+            color:gray;
+        }
+        .footer li a{
+            text-decoration: none;
+            color:white;
+        }
+        .footer li a:hover{
+            color:black;
+        }
+        .foot li{
+            margin: 7px;
+        }
+        .icons li{
+            margin: 7px;
+        }
+        .icons  img{
+            transition: transform 1s ease-in-out;
+        }
+        .icons li:hover img{
+           transform: scale(1.3);
+        }
+}

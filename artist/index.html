@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <div class="wrp">
+    <header class="navbar" id="navbar">
+      <div class="brand-title">Heaven Beauty Parlour</div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#brands">Brands</a></li>
+              <!-- <li><a href="#courses">Courses</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+
+            </ul>
+          </div>
+
+  </header>
+  <script>
+    $(document).ready(function(){
+            $(window).scroll(function() { // check if scroll event happened
+              if ($(document).scrollTop() > $(window).height()) { // check if user scrolled more than 50 from top of the browser window
+                $(".navbar").css("background-color", "black"); 
+                $(".navbar ul li a").css("color","peachpuff")
+                $(".brand-title").css("color","peachpuff");
+                $(".toggle-button .bar").css("background-color","peachpuff");
+                // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+              } else {
+                $(".navbar").css("background-color", "peachpuff");
+                $(".navbar ul li a").css("color","black");
+                $(".brand-title").css("color","black");
+                $(".toggle-button .bar").css("background-color","black");
+                 
+             
+                // if not, change it back to transparent
+              }
+            });
+          });
+  </script>
+  <section class="about" id="about">
+      
+          <img src="/img/ho.jpg" class="home" alt="">
+         <div style="background-color:peachpuff">
+          <div class="heading ">
+            <h1 class="text-center" data-aos="zoom-in">Hair & MakeUp</h1>
+          </div>
+          <div class="info pt-5 justify-content-center mr-auto ml-auto " data-aos="slide-right">
+           
+            <p class=" mr-auto ml-auto  ">Myself Ashwini Sarang. I am licensed cosmetology professional with
+               expertise in makeup. I am practicing  application of beauty treatments,
+               including hair styling, skin care, cosmetics, manicures/pedicures from last 8 years in Pune..</p>
+               <p class=" mr-auto ml-auto ">Colors is something I am interested in from my childhood. My interest has grown up with me and became by passion now.
+                  I just love to play with brushes and other beauty products.</p>
+                  <p class=" mr-auto ml-auto   pb-5 ">With great passion, I am consistently working hard towards my vision of making women more beautiful for special occasions.</p>
+          </div>
+          <section id="gallery" class="gallery" data-aos="fade-in">
+            <div class="d-flex row m-5">
+              <!-- <div class="row m-auto justify-content-center"> -->
+                <div class="column col-12 col-xl-2 col-sm-10">
+                  <img src="/img/01.jpg" />
+                  <img src="/img/02.jpg" />
+                  <img src="/img/PicsArt_11-10-06.13.51.jpg" alt="">
+                </div>
+
+                <div class="column col-12 col-xl-2 col-sm-10">
+                  <img src="/img/04.jpg" />
+                  <img src="/img/03.jpg"/>
+                </div>
+
+                <div class="column col-12 col-xl-2 col-sm-10">
+                  <img src="/img/IMG_2743.JPG" />
+                  <img src="/img/IMG_2884.JPG" alt="">
+                  <img src="/img/DSC_3905.jpg" alt="">
+                </div>
+              <!-- </div> -->
+            </div>
+          </section>
+     
+            <h2 class="text-center   pt-4 pb-3" data-aos="slide-left">Or Get Your Personalised Make Up Done!!</h2>
+         
+  </section>
+
+
+
+  <section id="brands" style="justify-content:center; align-items:center; background-color:white;">
+     <h2 class="text-center pt-5" data-aos="slide-right">Premium and Hygienic Brands we use!!</h2> <br>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(/img/Mac.png)"></div>
+        <div class="swiper-slide" style="background-image:url(/img/Pac.png)"></div>
+        <div class="swiper-slide" style="background-image:url(/img/Loreal-Paris.png)"></div>
+        <div class="swiper-slide" style="background-image:url(/img/Kryolan.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(/img/vlcc.png)"></div>
+        
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+
+      <div class="row m-auto justify-content-center"><h1 class="pt-5 " data-aos="zoom-in">Touch Base </h1></div>
+      <div class="row m-auto justify-content-center"><h2 data-aos="zoom-in">Be in touch to book a free makeup consultation!</h2></div>
+      <div class="row mr-auto ml-auto mt-5 mb-5 justify-content-center">
+        <div class="col-12 col-xl-3 col-sm-3 m-3" data-aos="zoom-in">
+          <div class="img-wrap text-center">
+          <img src="/img/phone icon (1).png" alt="">
+          </div>
+          <div class="text-center pt-3">
+            <h6><span style="color:rgb(245, 45, 78)">Phone:</span> 8788149371</h6>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-sm-3 m-3 " data-aos="zoom-in">
+          <div class="img-wrap text-center">
+            <img src="/img/email icon.png " alt="">
+            </div>
+        <div class="text-center pt-3">
+          <h6><span style="color: rgb(245, 45, 78);">Email:</span></h6>
+        </div>
+      </div>
+        <div class="col-12 col-xl-3 col-sm-3 m-3" data-aos="zoom-in">
+          <div class="img-wrap text-center">
+            <img src="/img/address icon.png" alt="">
+          </div>
+          <div class="text-center pt-3">
+            <h6><span style="color: rgb(245, 45, 78);">Address:</span></h6>
+          </div>
+        </div>
+      </div>
+      <div class="img-wrap p-5 whatsapp">
+        <a href="https://wa.me/7743808679"><img src="img/icons8-whatsapp-unscreen.gif" alt=""></a>
+      </div>
+      
+      
+      </div>
+    
+  </section>
+  <section class="footer">
+    <div class="row  justify-content-center">
+      <div class="col-12 col-xl-5 col-sm-12 m-4 card">
+        <div class="img-wrap text-center">
+          <img src="/img/insta icon.png" class="insta" alt="">
+        </div>
+      </div> 
+      <div class="col-12 col-xl-5 col-sm-12 m-4 card">
+       <div class="img-wrap text-center">
+          <img src="/img/Facebook icon (1).png" class="fab" alt="">
+       </div>
+      </div>      
+    </div>
+    <div class="row justify-content-center mt-3 p-3">
+      <h5 class="text-center">Copyright ©2021 All rights reserved | Made with ❤ by <span style="color:red; font-weight: 700;">CODEAAMY</span>. </h5>
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:200,
+          duration:500
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+       loop:true,
+       autoplay:{
+           delay:2000,
+           disableOnInteraction:false,
+  
+       }
+      });
+    </script>
+  <script src="script.js"></script>
+  </div>
+    
+</body>
+</html>

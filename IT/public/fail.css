@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.navbar-brand img{
+  width:100px;
+  height: auto;
+}
+.wrp {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+.navbar{
+    z-index: 1000;   
+    justify-content: space-between;
+}
+
+.navbar{
+    background-color:rgb(9, 9, 39);
+   
+}
+h1{
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn a{
+    color:white;
+    text-decoration: none;
+    /* margin-left: 40vw; */
+}
+.btn{
+    margin-left: 40vw;
+}
+.footer a{
+    color: white;
+}
+.footer a:hover{
+    color:rgb(241, 109, 0);
+}
+  .footer p{
+    font-size: 12px;
+    min-width:16vw;
+}
+.footer  li{list-style: none; justify-content: center; font-size: 12px;}
+.footer{
+    font-family: 'Akaya Telivigala', cursive;
+    position: relative;
+    background:url("img/footer.jpg");
+    color:white;
+    /* background-color:rgb(2, 2, 34); */
+    font-size: 20px;
+}
+  .failed{
+          height: 30vh;
+          width: auto;
+          justify-content: center;
+      }
+.footer h6{
+  text-align: center;
+}
+@media(min-width:990px){
+  
+    .navbar-brand img{
+      width:100px;
+      height: auto;
+    }
+    
+    .navbar{
+        z-index: 1000;   
+        justify-content: space-between;
+        height: 80px;
+        width: 100vw;
+        }
+        .collapse{
+            margin-left: 60vw;
+        }
+        h1{
+            font-size: 35px;
+        }
+        .btn a{
+            color:white;
+            text-decoration: none;
+            /* margin-left: 40vw; */
+        }
+        .btn{
+            margin-left: 50vw;
+        }
+        .footer a{
+            color: white;
+        }
+        .footer a:hover{
+            color:rgb(241, 109, 0);
+        }
+      
+        .footer p{
+          font-size: 16px;
+          min-width:16vw;
+      }
+      .footer  li{list-style: none; justify-content: center; font-size: 16px;}
+      .footer{
+          font-family: 'Akaya Telivigala', cursive;
+          position: relative;
+          background:url("img/footer.jpg");
+          color:white;
+          /* background-color:rgb(2, 2, 34); */
+          font-size: 20px;
+      }
+      .failed{
+          height: 70vh;
+          width: auto;
+          justify-content: center;
+      }
+}

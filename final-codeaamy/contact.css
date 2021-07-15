@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+
+
+  }
+  .wrap{
+	  overflow-x: hidden;
+	  width: 100vw;
+  }
+  .navbar{
+    font-family: 'Share Tech Mono', monospace;
+  }
+  .contact-info{
+    background: black;
+    color: white;
+    
+}
+.contact-info h2{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+.contact-info h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:focus .nav-link,
+.navbar .nav-item:hover .nav-link {
+  
+  text-decoration: underline;
+}
+#contact {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    justify-content: center;
+ 
+}
+
+#contact h1{
+    font-size: 50px;
+    color: rgb(192, 11, 11);
+    font-family: 'Share Tech Mono', monospace;
+}
+.contact-items {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    padding: auto;
+   margin:auto;
+   height: auto;
+    /* flex-direction: row; */
+    justify-content: center;
+    
+}
+.contact-item img{
+    width: auto;
+    height: 30px;
+}
+
+.contact-item {
+    
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5%;
+    height:80%;
+}
+.contact-item-form{
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.form-group input, .form-group textarea{
+    width:100%;
+    padding:3px 0;
+    font-size:16px;
+    margin:10px 0;
+    border:none;
+    border: 0.5px solid rgb(78, 2, 2);
+    outline: none;
+}
+.contact-item li{
+    list-style: none;
+    font-size: 16px;
+}
+form{
+   color:black;
+}
+.btn{
+   background: #ae0000;
+   color: white;
+}
+  .footer{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    background-position:center;
+    background:url("/images/codeaamy\ footer.png");
+    background-size: cover;
+
+  }
+ 
+  #contact {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    justify-content: center;
+ 
+}
+
+
+
+.contact-item {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5%;
+    height:80%
+}
+.contact-item-form{
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+}
+.contact-item li{
+    list-style: none;
+    font-size: 12px;
+}
+form{
+   color:black;
+}
+
+.contact-item {
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+ 
+.footer{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    background-position:center;
+    background:url("/images/codeaamy\ footer.png");
+    background-size: cover;
+
+  }
+.footer p{
+    color:white;
+}
+.footer h3{
+    color:white;
+}
+.footer h3:hover{
+    color:gray;
+}
+.footer li{
+    list-style: none;
+    color:white;
+}
+.footer li:hover{
+    color:gray;
+}
+.footer li a{
+    text-decoration: none;
+    color:white;
+}
+.footer li a:hover{
+    color:black;
+}
+.foot li{
+    margin: 7px;
+}
+.icons li{
+    margin: 7px;
+}
+.icons  img{
+    filter: grayscale(2);
+transition: .3s ease filter;
+}
+.icons li:hover img{
+    filter: grayscale(0);
+}
+@media(min-width:576px){
+    .navbar{
+        z-index: 1000;   
+        justify-content: space-between;
+        height: 60px;
+        width: 100vw;
+        }
+        .collapse{
+            margin-left: 38%;
+        }
+        .navbar .nav-item.active .nav-link,
+        .navbar .nav-item:focus .nav-link,
+        .navbar .nav-item:hover .nav-link {
+          
+          text-decoration: underline;
+        }
+        .navbar .navbar-brand,
+        .navbar .navbar-text {
+            /* color: #d11d1d; */
+            font-size: 20px;
+        }
+        
+        /* change the link color */
+        .navbar .navbar-nav .nav-link {
+            /* color:#d11d1d; */
+            font-size:20px;
+        }
+        .contact-info{
+            background: black;
+            color: white;
+        }
+        #contact {
+            width: 100vw;
+            height: auto;
+            background-color: white;
+            justify-content: center;
+         
+        }
+        
+        #contact h1{
+            font-size: 50px;
+            color: rgb(192, 11, 11);
+        }
+        .contact-items {
+        
+            width: 100%;
+            display: flex;
+            padding: auto;
+           margin:auto;
+           height: 90vh;
+            /* flex-direction: row; */
+            justify-content: center;
+            
+        }
+        .contact-item img{
+            width: auto;
+            height: 30px;
+        }
+        
+        .contact-item {
+            
+            width: 100%;
+            justify-content: center;
+            flex-direction: row;
+            border-radius: 5%;
+            height:80%
+        }
+        .contact-item-form{
+            width: 100%;
+            justify-content: center;
+            flex-direction: row;
+           
+        }
+        .form-group input, .form-group textarea{
+            width:100%;
+            padding:3px 0;
+            font-size:16px;
+            margin:10px 0;
+            border:none;
+            border: 0.5px solid rgb(78, 2, 2);
+            outline: none;
+        }
+        .contact-item li{
+            list-style: none;
+            font-size: 16px;
+        }
+       form{
+           color:black;
+       }
+       .btn{
+           background: #ae0000;
+           color: white;
+       }
+        
+        .footer{
+            /* position: relative; */
+            width: 100%;
+            height: auto;
+            /* position: relative; */
+            background-position:center;
+            background:url("/images/codeaamy\ footer.png");
+            background-size: cover;
+        
+          }
+          .services-1{
+              /* background: peru; */
+              margin-top: -75px;
+          }
+        .footer p{
+            color:white;
+        }
+        .footer h3{
+            color:white;
+        }
+        .footer h3:hover{
+            color:gray;
+        }
+        .footer li{
+            list-style: none;
+            color:white;
+        }
+        .footer li:hover{
+            color:gray;
+        }
+        .footer li a{
+            text-decoration: none;
+            color:white;
+        }
+        .footer li a:hover{
+            color:black;
+        }
+        .foot li{
+            margin: 7px;
+        }
+        .icons li{
+            margin: 7px;
+        }
+        .icons  img{
+            transition: transform 1s ease-in-out;
+        }
+        .icons li:hover img{
+            transform: scale(1.3);
+        }
+}

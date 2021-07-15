@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	
+
+  }
+  .wrap{
+	  overflow-x: hidden;
+	  width: 100vw;
+  }
+  .navbar{
+      width: 100vw;
+      font-family: 'Share Tech Mono', monospace;
+  }
+  .navbar .nav-item.active .nav-link,
+  .navbar .nav-item:focus .nav-link,
+  .navbar .nav-item:hover .nav-link {
+    
+    text-decoration: underline;
+  }
+  .about {
+    width:90vw;
+}
+
+.about img{
+    width: 70vw;
+    height: auto;
+    transition: ease-in-out 1s;
+}
+.about img:hover{
+    transform: scale(1.2);
+}
+.about h2{
+    color:#ae0000;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.about p{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading{
+    font-size: 25px;
+    color: #ae0000;
+    font-family: 'Share Tech Mono', monospace;
+}
+.feature{
+    border-bottom: 1px solid #ae0000;
+    border-right: 1px solid #ae0000;
+    width:auto;
+    height: 35vh; 
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    box-shadow:0.5em 0.5em 0.8em rgba(202, 201, 206, 0.4);
+    transition: transform 1s ease-in-out;
+}
+.feature h3{
+    color:#ae0000;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+}
+.feature p{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+.feature:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
+.feature img{
+    width: auto;
+    height: 30px;
+}
+.courses {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+    /* width: 100%;
+    height: 100%;
+
+    align-items: center;
+    background: white;
+    justify-content: center; */
+  }
+
+ .courses .swiper-container {
+    width: 95%;
+    height: 100%;
+  }
+
+ .courses .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width:auto;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /* .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+} */
+
+.courses .card {
+    
+    max-width: 290px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 2rem;
+    background: white;
+    position: absolute;
+    /* display: flex; */
+    align-items: flex-start;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.courses .card:hover {
+    transform: translateY(5px);
+}
+.courses .card:hover:before {
+    opacity: 1;
+}
+.courses .card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.courses .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.courses .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover; 
+     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.courses .card .info {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    text-align: left;
+    /* transform: translateY(30px); */
+    transition: 0.5s;
+}
+.card .info h1 {
+    margin: 0px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.card .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.card .info button:hover {
+    background: #ae0000;
+    color: white;
+} 
+    .footer{
+        /* position: relative; */
+        width: 100%;
+        height: auto;
+        /* position: relative; */
+        background-attachment:fixed;
+        background-position:center;
+        background:url("/images/codeaamy\ footer.png");
+        background-size: cover;
+    
+      }
+    .footer p{
+        color:white;
+    }
+    .footer h3{
+        color:white;
+    }
+    .footer h3:hover{
+        color:gray;
+    }
+    .footer li{
+        list-style: none;
+        color:white;
+    }
+    .footer li:hover{
+        color:gray;
+    }
+    .footer li a{
+        text-decoration: none;
+        color:white;
+    }
+    .footer li a:hover{
+        color:black;
+    }
+    .foot li{
+        margin: 7px;
+    }
+    .icons li{
+        margin: 7px;
+    }
+ 
+    .icons  img{
+        transition: transform 1s ease-in-out;
+    }
+    .icons li:hover img{
+        transform: scale(1.3);
+    }
+
+    @media(min-width:576px){
+        .navbar{
+            z-index: 1000;   
+            justify-content: space-between;
+            height: 60px;
+            width: 100vw;
+            font-family: 'Share Tech Mono', monospace;
+            }
+            .collapse{
+                margin-left: 38%;
+            }
+            .navbar .nav-item.active .nav-link,
+  .navbar .nav-item:focus .nav-link,
+  .navbar .nav-item:hover .nav-link {
+    
+    text-decoration: underline;
+  }
+  .navbar .navbar-brand,
+  .navbar .navbar-text {
+      /* color: #d11d1d; */
+      font-size: 20px;
+  }
+  
+  /* change the link color */
+  .navbar .navbar-nav .nav-link {
+      /* color:#d11d1d; */
+      font-size:20px;
+  }
+            .about .info{
+                width:50vw;
+            }
+            .about img{
+                width: 30vw;
+                height: auto;
+                transition: ease-in-out 1s;
+            }
+            .about img:hover{
+                transform: scale(1.2);
+            }
+            .about h2{
+                color:#ae0000;
+                font-weight: bold;
+                font-family: 'Share Tech Mono', monospace;
+            }
+            .about p{
+                color: grey;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .feature{
+                border-bottom: 1px solid #ae0000;
+                border-right: 1px solid #ae0000;
+                width:auto;
+                height: 30vh; 
+                border-radius: 25px;
+                box-shadow:0.5em 0.5em 0.8em rgba(202, 201, 206, 0.4);
+                transition: transform 1s ease-in-out;
+            }
+            .feature h3{
+                color:#ae0000;
+                font-weight: bold;
+                font-family: 'Share Tech Mono', monospace;
+                text-transform: uppercase;
+            }
+            .feature p{
+                color: grey;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .feature:hover{
+                transform: scale(1.1);
+                transition: 2s;
+            }
+            .feature img{
+                width: auto;
+                height: 50px;
+            }
+            .courses {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+                height: 60vh;
+                /* width: 100%;
+                height: 100%;
+    
+                align-items: center;
+                background: white;
+                justify-content: center; */
+              }
+          
+             .courses .swiper-container {
+                width: 95%;
+                height: 100%;
+              }
+          
+             .courses .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                width:auto;
+                
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+              }
+
+              /* .wrapper {
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+            } */
+            
+            .courses .card {
+                
+                min-width: 300px;
+                height: 350px;
+                border-radius: 15px;
+                padding: 2rem;
+                background: white;
+                position: absolute;
+                /* display: flex; */
+                align-items: flex-start;
+                transition: 0.4s ease-out;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+            }
+            .courses .card:hover {
+                transform: translateY(20px);
+            }
+            .courses .card:hover:before {
+                opacity: 1;
+            }
+            .courses .card:hover .info {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            .courses .card:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                background: rgba(0, 0, 0, 0.6);
+                z-index: 2;
+                transition: 0.5s;
+                opacity: 0;
+            }
+            .courses .card img {
+                width: 100%;
+                height: 100%;
+                /* -o-object-fit: cover; */
+                /* object-fit: cover; */
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 15px;
+            }
+            .courses .card .info {
+                position: absolute;
+                z-index: 3;
+                color: white;
+                opacity: 0;
+                text-align: left;
+                /* transform: translateY(30px); */
+                transition: 0.5s;
+            }
+            .card .info h1 {
+                margin: 0px;
+                font-family: 'Share Tech Mono', monospace;
+            }
+            .card .info p {
+                letter-spacing: 1px;
+                font-size: 15px;
+                margin-top: 5px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .card .info button {
+                padding: 0.6rem;
+                outline: none;
+                border: none;
+                border-radius: 3px;
+                background: white;
+                color: black;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.4s ease;
+            }
+            .card .info button:hover {
+                background: #ae0000;
+                color: white;
+            } 
+            .footer{
+                /* position: relative; */
+                width: 100%;
+                height: auto;
+                background-attachment:fixed;
+                /* position: relative; */
+                background-position:center;
+                background:url("/images/codeaamy\ footer.png");
+                background-size: cover;
+            
+              }
+            .footer p{
+                color:white;
+            }
+            .footer h3{
+                color:white;
+            }
+            .footer h3:hover{
+                color:gray;
+            }
+            .footer li{
+                list-style: none;
+                color:white;
+            }
+            .footer li:hover{
+                color:gray;
+            }
+            .footer li a{
+                text-decoration: none;
+                color:white;
+            }
+            .footer li a:hover{
+                color:black;
+            }
+            .foot li{
+                margin: 7px;
+            }
+            .icons li{
+                margin: 7px;
+            }
+            .icons  img{
+                transition: transform 1s ease-in-out;
+            }
+            .icons li:hover img{
+                transform: scale(1.3);
+            }
+    }

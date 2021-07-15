@@ -1,0 +1,303 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+.wrp{
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-family: 'Architects Daughter', cursive;
+    overflow-x: hidden;
+}
+/* Header section */
+#navbar  {
+	position:fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 60px;
+  background-color: white;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition:0.2s;
+  }
+.brand-title{
+    color: peachpuff;
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    position: fixed;
+}
+.navbar-links{
+    display: none;
+   position: absolute;
+   right: 0;
+   top:0;
+   background-color:peachpuff;
+}
+.navbar-links ul{
+    /* display: flex; */
+    margin-top:100px;
+    text-align: center;
+    /* right:-50%; */
+    width:50vw;
+   
+    /* height: 100vh; */
+   
+}
+.navbar-links ul li{
+    list-style: none;
+    margin: 50px;
+    text-decoration: none;
+   
+
+}
+.navbar-links ul li a{
+    font-size: 15px;
+   color: black;
+}
+.navbar-links.open{
+    display:block;
+            opacity: 1;
+    transform: scale(1);
+  }
+.toggle-button {
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 1000;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.services .card{
+    box-shadow:  0.5em 0.5em 1em rgba(0,0,0,0.3 );
+    width:auto;
+    border: none;
+    margin-top: 15px;
+    /* font-family: 'Redressed', cursive; */
+}
+
+/* .services img{
+      width: auto;
+      height: 150px;
+}
+.services .skin{
+    width:200px;
+    height: auto;
+} */
+.services .text{
+    color :black;
+    
+}
+.card li{
+    list-style: none;
+    font-size:12px;
+  
+}
+.card h3{
+  text-transform: uppercase;
+  color:rgb(245, 45, 78);
+ 
+}
+#services h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(245, 45, 78);
+    text-decoration-line:underline;
+    /* font-weight: bold; */
+}
+
+.services h2{
+    font-size:20px;
+    color:rgb(245, 45, 78);
+   
+}
+.price{
+    background-color: rgb(245, 45, 78);
+    color: white;
+    outline: none;
+    border:none;
+    padding:8px;
+    font-size: 15px;
+}
+.footer{
+  background-color: black;
+  color:white;
+  height: auto;
+}
+.footer h5{
+    font-size: 12px;
+}
+.footer .card{
+  max-width:5vw;
+  background-color: transparent;
+}
+.footer .insta{
+    height:40px;
+    width: auto;
+    
+}
+.footer .fab{
+    height: 40px;
+    width: auto;
+}
+
+@media(min-width:990px){
+    #navbar  {
+        position:fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        justify-content: space-between;
+        background-color: peachpuff;
+      
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition:0.2s;
+      }
+    .brand-title{
+        color:black;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .navbar-links{
+        /* display: inline-block; */
+              
+        display: block;
+        margin-left:60%;
+        position: relative;
+        background-color: transparent;
+    }
+    .navbar-links ul{
+        display: flex;
+        margin:4px;
+        /* background-color: transparent; */
+       
+    }
+    .navbar-links ul li{
+        list-style: none;
+        margin: 12px;
+        text-decoration: none;
+    
+    }
+    .navbar-links ul li a{
+        font-size: 16px;
+        color:black;
+    }
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display:none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        z-index: 1000;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: peachpuff;
+        border-radius: 10px;
+    }
+    
+  .services .card{
+      box-shadow:  0.5em 0.5em 1em rgba(0,0,0,0.3 );
+    width: auto;
+      border: none;
+      height: auto;
+      border-radius: 5px;
+      /* font-family: 'Redressed', cursive; */
+  }
+  .services .card:hover{
+      transition:ease-in-out 1.5s;
+        transform: scale(1.1);
+  }
+  
+  .services img{
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+  }
+   /* width:300px;
+       .services .skin{
+    height: auto;
+  } */
+  .services .text{
+      color :black;
+      
+  }
+  .card li{
+      list-style: none;
+      font-size:15px;
+      
+  }
+  .card h3{
+      font-size: 20px;
+    text-transform: uppercase;
+    color:rgb(245, 45, 78);
+  
+  }
+  #services h1{
+      font-size: 40px;
+      text-transform: uppercase;
+      color:rgb(245, 45, 78);
+     
+      text-decoration-line:underline;
+      /* font-weight: bold; */
+  }
+ 
+  .services h2{
+      font-size:30px;
+      color:rgb(245, 45, 78);
+     
+  }
+
+  .price{
+      background-color: rgb(245, 45, 78);
+      color: white;
+      outline: none;
+      border:none;
+      padding:8px;
+      font-size: 15px;
+  }
+  .footer{
+    background-color: black;
+    color:white;
+    height: auto;
+}
+.footer .card{
+    max-width:5vw;
+    background-color: transparent;
+}
+.footer h5{
+    font-size: 18px;
+}
+.footer .insta{
+    height: 40px;
+    width: auto;
+}
+.footer .fab{
+    height: 40px;
+    width: auto;
+}
+}

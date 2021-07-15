@@ -1,0 +1,610 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    body{ 
+        /* overflow-x: hidden;  */
+
+    }
+    
+    header {
+        width:100%;
+        height: 100vh;
+        
+    
+    }
+    header h1{
+        font-size: 35px; color:darkgreen;
+    }
+    header p{
+        font-size: 18px; color:grey;
+    }
+    
+     .navbar {
+         top:0;
+         height: 60px;
+        width: 100vw;
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        justify-content: space-between;
+        align-items: center;
+        background-color:darkgreen;
+        color: white;
+        margin-bottom:30px;
+    }
+    
+    .brand-title {
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+    
+    
+    
+    .navbar-links ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        /* height:80vh; */
+        /* left:0%; */
+        width:500px;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .navbar-links li a:hover {
+        color: black;
+    }
+    
+    .navbar-links {
+        /* height: 100vh; */
+        display: none;
+        right:-50%;
+        position: relative;
+        /* justify-content: space-between; */
+        align-items: center;
+        background-color:darkgreen;
+        color: white;
+    }
+      
+     
+    .navbar-links.open{
+        display:block;
+                opacity: 1;
+        transform: scale(1);
+      }
+    .toggle-button {
+        position: absolute;
+        top: 25px;
+        right: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        z-index: 1000;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    #home-img img{
+        width: 80vw; height:auto; border-radius: 6%;
+    }
+    #about{
+        height:auto;
+        width:100vw;   
+    }
+    #about h1{
+        font-size: 30px; color:darkgreen
+    }
+    #about p{
+        font-size: 15px; color:grey;
+    }
+    
+    #about .row{
+        background: url(/img/Agro_white.png)no-repeat;
+        background-size:cover;
+    }
+    #about img{
+        /* margin-left: 80px; */
+       width:auto;
+        height:40vh;
+        border-radius: 6%;
+        /* padding-top:15vh; */
+    }
+   
+    #Products{
+        background: url(/img/Agro_white.png);
+        width:100vw;
+        height:auto;
+    }
+    #Products h1{
+        font-size:30px;
+        color:darkgreen;
+        /* padding-top: 50px; */
+    }
+    #Products h3{
+        font-size:25px;
+        color:darkgreen;
+        /* padding-top: 20px; */
+    }
+    #Product p{
+        font-size: 15px; color:grey;
+    }
+    .row{
+        background: white;
+        width:100vw;
+        display: flex;
+        /* margin-left:100px;
+        margin-top:15vh; */
+    }
+    #Products .row img{
+        width:350px;
+        height: auto;
+        border:1px solid darkgreen;
+        /* box-shadow: 5px 2px 2px rgb(182, 173, 173); */
+        border-radius: 6%;
+    }
+    #quality{
+        background: url(/img/Agro_white.png)no-repeat;
+        background-size:cover;
+        width:100vw;
+        /* height: auto; */
+    }
+    #quality h1{
+        font-size: 30px;
+    }
+    #quality p{
+        font-size: 15px;
+    }
+    #quality .row{
+        /* margin-top:0; */
+        width:100%;
+        height: auto;
+        display:flex;
+        /* margin-left:40px; */
+    }
+    
+    #quality p{
+        font-size: 20px; color:grey;
+    }
+    #img-quality img{
+        width:80vw;
+        height:auto;
+        border-radius: 6%;
+    }
+
+   
+    /* #assur img{ 
+         margin-left: 80px; 
+       width:80vw; 
+         height:auto; 
+         padding-top:15vh; 
+         border-radius: 6%;
+     }  */
+    #assur  h3{
+        text-align: center;
+        /* padding-top:25vh;
+        padding-left: 350px; */
+        color:darkgreen;
+        font-size: 25px;
+    }
+    #assur p{
+        text-align: center;
+        /* padding-left: 200px; */
+        font-size: 15px;
+        /* padding-top: 30px; */
+    }
+    .methods{
+        /* margin-top:50px; */
+        background: url(/img/Agro_white.png);
+       
+    }
+    .methods h1{
+        color:darkgreen;
+
+        /* padding-top:40px; */
+    }
+    .methods .row{
+        /* background: white; */
+        background: transparent;
+        /* padding-top:150px; */
+        width:100vw;
+        /* height: 80vh; */
+        height: 100vh;
+        display:flex;
+        /* margin-left:250px; */
+        /* justify-content: center; */
+    }
+    .methods img{
+        width:15vw;
+        height: auto;
+    }
+    .methods   h3{
+        font-size:20px;
+        /* padding-top: 15px; */
+        color:red;
+    }
+    .methods p{
+        font-size: 15px;
+        /* padding-top: 15px; */
+    }
+    
+     #why{
+        background: url(/img/Agro_white.png)no-repeat;
+        background-size:cover;
+         width:100vw;
+     }
+     #why .row{
+    
+        width:100vw;
+        background-color: transparent;
+        display:flex;
+      
+     }
+     #why h1{
+         /* padding-top:40px; */
+         font-size: 30px;
+         color:green;
+     }
+     #why h3{
+         font-size: 20px;
+         
+     }
+    #why .row .basket{
+        /* margin-left:50px; */
+        width:80vw;
+         height:auto;
+    
+     }
+     #contact{
+        width:100vw;
+        height: auto;
+        background:url(/img/Agro_green.png);
+        background-size: cover;
+        /* margin: 0;
+        padding: 0;; */
+    }
+    #cont{
+        /* margin-left:100px;
+        margin-top:80px; */
+        color: white;
+        text-align: left;
+      padding-left: 55px;
+      padding-top: 5px;
+      /* font-size: 10px; */
+    }
+    #cont h5{
+        font-size: 16px;
+    }
+    #cont h3{
+        /* padding-bottom: 10px; */
+        font-size:20px;
+    }
+     #trade h2{
+        /* margin-left:80px; */
+        color: white;
+        /* padding-top:30px; */
+        font-size: 25px;
+        padding-left: 45px;
+        
+    }
+    #enu ul{
+        padding-top: 5px;
+        list-style: none;
+        text-align: left;
+        
+    }
+    #menu ul li{
+        /* margin:20px; */
+        font-size:14px;
+    }
+    #menu ul  li a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+    @media(min-width:576px){
+
+        .navbar {
+            top:0;
+            height: 70px;
+           width: 100vw;
+           display: flex;
+           position: fixed;
+           z-index: 1100;
+           justify-content: space-between;
+           align-items: center;
+           background-color:darkgreen;
+           color: white;
+       }
+        .navbar-links {
+            /* height: 100%; */
+            background-color: darkgreen;
+            
+        display: block;
+        right:25px;
+        position: relative;
+        /* justify-content: space-between; */
+        align-items: center;
+       
+        color: white;
+        }
+        
+        .navbar-links ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar-links li {
+            list-style: none;
+        }
+        
+        .navbar-links li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+        }
+        
+        .navbar-links li:hover {
+            background-color: #555;
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display:none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            z-index: 1000;
+        }
+        
+        .toggle-button .bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+        header h1{
+            font-size: 40px;
+        }
+        header p{
+            font-size: 20px;
+        }
+        #home-img img{
+            width: 40vw; height: auto; border-radius: 6%;
+        }
+        
+        
+         
+        #about{
+            height:auto;
+            width:100vw;   
+        }
+        #about h1{
+            font-size: 40px;
+        }
+        #about p{
+            font-size: 20px;
+        }
+        #about .row{
+            background: url(/img/Agro_white.png)no-repeat;
+            background-size:cover;
+        }
+        #about img{
+            /* margin-left: 80px; */
+           width:auto;
+            height:60vh;
+            border-radius: 6%;
+            /* padding-top:15vh; */
+        }
+        
+        
+        #Products{
+            background: url(/img/Agro_white.png);
+            width:100vw;
+            height:auto;
+        }
+        #Products h1{
+            font-size:45px;
+            color:darkgreen;
+            /* padding-top: 50px; */
+        }
+        #Products h3{
+            font-size:45px;
+            color:darkgreen;
+            /* padding-top: 20px; */
+        }
+        .row{
+            background: white;
+            width:100vw;
+            display: flex;
+            /* margin-left:100px;
+            margin-top:15vh; */
+        }
+        #Products .row img{
+            width:400px;
+            height: auto;
+            border:1px solid darkgreen;
+            /* box-shadow: 5px 2px 2px rgb(182, 173, 173); */
+            border-radius: 6%;
+        }
+        #quality{
+            background: url(/img/Agro_white.png)no-repeat;
+            background-size:cover;
+            width:100vw;
+            /* height: auto; */
+        }
+        #quality .row{
+            /* margin-top:0; */
+            width:100vw;
+            height: auto;
+            display:flex;
+            /* margin-left:40px; */
+        }
+       
+        #assur 
+        #img, #text{
+            width:40vw;
+            /* padding:0; */
+        }
+        #assur img{
+            /* margin-left: 80px; */
+           width:40vw;
+            height:auto;
+            /* padding-top:15vh; */
+            border-radius: 6%;
+        }
+        #assur  h3{
+            text-align: center;
+            /* padding-top:25vh;
+            padding-left: 350px; */
+            color:darkgreen;
+            font-size: 45px;
+        }
+        #assur p{
+            text-align: center;
+            /* padding-left: 200px; */
+            font-size: 20px;
+            /* padding-top: 30px; */
+        }
+        .methods{
+            /* margin-top:50px; */
+            background: url(/img/Agro_white.png);
+           
+        }
+        .methods h1{
+            color:darkgreen;
+           
+            /* padding-top:40px; */
+        }
+        .methods .row{
+            /* background: white; */
+            background: transparent;
+            /* padding-top:150px; */
+            width:100vw;
+            /* height: 80vh; */
+            height: 100vh;
+            display:flex;
+            /* margin-left:250px; */
+            /* justify-content: center; */
+        }
+        
+        .methods .row  h3{
+            font-size:35px;
+            color:red;
+            /* padding-top: 15px; */
+        }
+        .methods .row p{
+            font-size: 20px;
+            /* padding-top: 15px; */
+        }
+        .methods img{
+            width:auto;
+            height: auto;
+        }
+        
+         #why{
+            background: url(/img/Agro_white.png)no-repeat;
+            background-size:cover;
+             width:100vw;
+         }
+         #why .row{
+        
+            width:100vw;
+            
+            display:flex;
+          
+         }
+         #why h1{
+             /* padding-top:40px; */
+             font-size: 45px;
+             color:green;
+         }
+        
+         #why .row .basket{
+            /* margin-left:50px; */
+            width:40vw;
+             height:auto;
+        
+         }
+         #why h3{
+            font-size: 35px;
+           
+        }
+        
+        
+        
+        #contact{
+            width:100vw;
+            height: auto;
+            background:url(/img/Agro_green.png);
+            background-size: cover;
+            /* margin: 0;
+            padding: 0;; */
+        }
+        #cont{
+            /* margin-left:100px;
+            margin-top:80px; */
+            color: white;
+        }
+        #cont h3{
+            /* padding-bottom: 10px; */
+            font-size:20px;
+        }
+        #trade , #trade h2{
+            /* margin-left:80px; */
+            color: white;
+            /* padding-top:30px; */
+            font-size: 25px;
+        }
+       
+        #menu {
+            /* margin-left:120px;
+            margin-top:60px; */
+          
+        }
+        #menu ul{
+            list-style: none;
+            text-align: right;
+            
+        }
+        #menu ul li{
+            /* margin:20px; */
+            font-size:18px;
+        }
+        #menu ul  li a{
+            color: white;
+            text-decoration: none;
+        }
+
+
+       }                                                                                                                                                                                                                                                  
+    
+    
+    
+
+
+
+

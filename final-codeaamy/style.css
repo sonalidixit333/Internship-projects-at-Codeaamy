@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	/* font-family: 'Share Tech Mono', monospace; */
+
+  }
+  .recent{
+	  font-size: 20px;
+  }
+  .wrap{
+	  overflow-x: hidden;
+	  width: 100vw;
+  }
+.navbar{
+	font-family: 'Share Tech Mono', monospace;
+	
+	} 
+	.strategy h1{
+		font-size: 20px;
+		font-family: 'Share Tech Mono', monospace;
+	}
+	.strategy p{
+		font-size: 12px;
+		font-family: 'Montserrat', sans-serif;
+	}
+.home{
+	width:100vw;
+}
+  .navbar .navbar-brand,
+  .navbar .navbar-text {
+	  color: #d11d1d;
+  }
+  
+  /* change the link color */
+  .navbar .navbar-nav .nav-link {
+	  color:#d11d1d;
+  }
+  
+  /* change the color of active or hovered links */
+  .navbar .nav-item.active .nav-link,
+  .navbar .nav-item:focus .nav-link,
+  .navbar .nav-item:hover .nav-link {
+	  color: #ae0000;
+  }
+  
+
+.swiper-container-2 {
+	width: 100%;
+	height:40vh;
+	background: white;
+  }
+ 
+ .swiper-container-2 .swiper-slide {
+	/* height: auto; */
+	/* background-size: contain; */
+	/* backface-visibility: visible; */
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 40vh;
+  }
+.projects-1 {
+	background:white;
+	/* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+	
+}
+
+ .swiper-slide {
+	height: 400px;
+	/* background: #882525; */
+	line-height: 300px;
+	text-align: center;
+}
+.card {
+	position: relative;
+	overflow: hidden;
+	/* transform: translate(-50%,-50%); */
+	width: auto;
+	height: 400px;
+	/* background: #ae0000; */
+}
+.card .image img{
+	position: absolute;
+	left:15%;
+	width: 60%;
+	height: auto;
+	overflow: hidden;
+}
+ .spanner img {
+	position: absolute;
+	top:10%;
+	left:25%;
+	width: auto;
+	height: 80%;
+	overflow: hidden;
+   
+}
+.fact img{
+	position: absolute;
+	top:15%;
+	left:15%;
+	width: auto;
+	height: 60%;
+	overflow: hidden;
+}
+
+.web img{
+	position: absolute;
+	top:20%;
+	/* left:5%; */
+	width: 80%;
+	right:20px;
+	height:auto;
+	overflow: hidden;
+}
+
+.web-1 img{
+	position: absolute;
+	top:17%;
+	right: 20px;
+	width:80%;
+	height:auto;
+	overflow: hidden;
+	transition: .5s;
+}
+.image img {
+	width: 100%;
+	transition: .5s;
+}
+
+.card:hover .image img {
+	opacity: .5;
+	transform: translateX(30%);/*100%*/
+}
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width:100%;
+	height: 100%;
+	background: transparent;
+	transition:.5s;
+	transform-origin: left;
+	transform: perspective(2000px) rotateY(-50deg);
+}
+.card:hover .details {
+	transform: perspective(2000px) rotateY(0deg);
+	width: 100%;
+}
+.card .details .center {
+	
+	text-align: center;
+	background:whitesmoke;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.card .details .center h1 {
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	padding-top: 20px;
+	font-weight: bold;
+	color: #ae0000;
+	line-height: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.card .details .center p {
+	padding-bottom: 50px;
+	color: #262626;
+	height: 20px;
+}
+.card .details .center ul {
+	/* margin: 10px auto 0; */
+	padding: 0;
+	display: table;
+}
+.card .details .center ul li {
+	list-style: none;
+	/* margin: 0 5px; */
+	float: left;
+}
+.card .details .center ul li a {
+	display: block;
+	background: #262626;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	transform: .5s;
+}
+.card .details .center ul li a:hover {
+	background: #ae0000;
+}
+.about{
+	margin-top:-55px;
+	background:black;
+	color: white;
+	/* height: 100vh; */
+	margin-bottom: -45px;
+	clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
+}
+.about h1{
+	font-size: 20px;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	
+}
+.swiper-container-2   .swiper-slide .text{
+	min-width: 100vw;
+}
+.about p{
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+.about .img-text img{
+	width:250px;
+	height:auto;
+}
+.test {
+	clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+	background: transparent;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: white;
+	margin: 0;
+	
+	
+  }
+  .reviews{
+	  padding: 20px;
+  }
+  .test h5{
+	  font-size:15px;
+	  font-family: 'Montserrat', sans-serif;
+  }
+  .test h3{
+	  font-size:22px ;
+	  font-family: 'Share Tech Mono', monospace;
+  }
+
+ .test .swiper-container {
+	
+	width: 100%;
+	height: 100%;
+  }
+
+  .test .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #ae0000;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+  
+  .clients .image-1{
+	   
+	  width: 55px; 
+	  margin:8px;
+	  justify-content: center;
+  }
+  .clients .image{
+	width: 55px; 
+	margin:8px;
+	justify-content: center;
+}
+  .image img{
+	  width:50px;
+	height:auto;
+	}
+	.image-1 img{
+		width: 50px;
+		height: auto;
+	
+	}
+  
+  
+  .footer{
+	/* position: relative; */
+	width: 100vw;
+	height: auto;
+	/* position: relative; */
+	background-position:center;
+	background:url("/images/codeaamy\ footer.png");
+	background-size: cover;
+
+  }
+.footer p{
+	color:white;
+}
+.footer h3{
+	color:white;
+}
+.footer h3:hover{
+	color:gray;
+}
+.footer li{
+	list-style: none;
+	color:white;
+}
+.footer li:hover{
+	color:gray;
+}
+.footer li a{
+	text-decoration: none;
+	color:white;
+}
+.footer li a:hover{
+	color:black;
+}
+.foot li{
+	margin: 7px;
+}
+.icons li{
+	margin: 7px;
+}
+.icons  img{
+	filter: grayscale(2);
+transition: .3s ease filter;
+}
+.icons li:hover img{
+	filter: grayscale(0);
+}
+  
+  @media(min-width:576px){
+
+
+	.navbar{
+        z-index: 1000;   
+        justify-content: space-between;
+        height: 60px;
+        width: 100vw;
+		/* font-weight: bold; */
+		font-family: 'Share Tech Mono', monospace;
+		
+        }
+        .collapse{
+            margin-left: 38%;
+        }
+		.home{
+			background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+			
+		}
+		
+		.navbar .navbar-brand,
+.navbar .navbar-text {
+    color: #d11d1d;
+	font-size: 20px;
+}
+
+/* change the link color */
+.navbar .navbar-nav .nav-link {
+    color:#d11d1d;
+	font-size:20px;
+}
+
+/* change the color of active or hovered links */
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:focus .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color: #ae0000;
+	text-decoration: underline;
+}
+.strategy h1{
+	font-size: 30px;
+	font-family: 'Share Tech Mono', monospace;
+}
+.strategy p{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+		
+		.swiper-container-2 {
+			width: 100%;
+			height:90vh;
+			background: white;
+		  }
+		 
+		 .swiper-container-2 .swiper-slide {
+			background-position: center;
+			background-size: cover;
+			height: 85vh;
+		  }
+		  
+		.projects-1 {
+            background:white;
+            /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+			font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+			
+        }
+
+     	.swiper-slide {
+            height: 400px;
+            /* background: #882525; */
+            line-height: 300px;
+            text-align: center;
+        }
+		.about .img-text img{
+			height: 350px;
+			width: auto;
+			margin-top: 50px;
+		}
+		.card {
+			position: relative;
+			overflow: hidden;
+			/* transform: translate(-50%,-50%); */
+			width: auto;
+			height: 400px;
+			/* background: #ae0000; */
+		}
+		.card .image img{
+			position: absolute;
+			left:15%;
+			width: 60%;
+			height: auto;
+			overflow: hidden;
+		}
+		 .spanner img {
+			position: absolute;
+			top:10%;
+			left:25%;
+			width: auto;
+			height: 80%;
+			overflow: hidden;
+		   
+		}
+		.fact img{
+			position: absolute;
+			top:15%;
+			left:15%;
+			width: auto;
+			height: 60%;
+			overflow: hidden;
+		}
+		
+		.web img{
+			position: absolute;
+			top:20%;
+			/* left:5%; */
+			width: 80%;
+			right:20px;
+			height:auto;
+			overflow: hidden;
+		}
+	
+		.web-1 img{
+			position: absolute;
+			top:17%;
+			right: 20px;
+			width:80%;
+			height:auto;
+			overflow: hidden;
+			transition: .5s;
+		}
+		.image img {
+			width: 100%;
+			transition: .5s;
+		}
+		
+		.card:hover .image img {
+			opacity: .5;
+			transform: translateX(30%);/*100%*/
+		}
+		.card .details {
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			width:100%;
+			height: 100%;
+			background: transparent;
+			transition:.5s;
+			transform-origin: left;
+			transform: perspective(2000px) rotateY(-50deg);
+		}
+		.card:hover .details {
+			transform: perspective(2000px) rotateY(0deg);
+			width: 100%;
+		}
+		.card .details .center {
+			
+			text-align: center;
+			background:whitesmoke;
+			position: absolute;
+			width: 100%;
+			height: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.card .details .center h1 {
+			margin: 0;
+			padding: 0;
+			height: 20px;
+			padding-top: 20px;
+			font-weight: bold;
+			color: #ae0000;
+			line-height: 20px;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		.card .details .center p {
+			padding-bottom: 50px;
+			color: #262626;
+			height: 20px;
+		}
+		.card .details .center ul {
+			/* margin: 10px auto 0; */
+			padding: 0;
+			display: table;
+		}
+		.card .details .center ul li {
+			list-style: none;
+			/* margin: 0 5px; */
+			float: left;
+		}
+		.card .details .center ul li a {
+			display: block;
+			background: #262626;
+			color: #fff;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			transform: .5s;
+		}
+		.card .details .center ul li a:hover {
+			background: #ae0000;
+		}
+		.about{
+			margin-top:-55px;
+			background:black;
+			color: white;
+			/* height: 100vh; */
+			margin-bottom: -55px;
+			clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+		}
+	
+		.test {
+			clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+			background: #ae0000;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: white;
+			margin: 0;
+			padding: 0;
+			
+		  }
+		  .test h5{
+			font-size:25px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.test h3{
+			font-size:32px ;
+			font-family: 'Share Tech Mono', monospace;
+		}
+		 .test .swiper-container {
+			
+			width: 100%;
+			height: 100%;
+		  }
+		  .test h3{
+			font-family: 'Share Tech Mono', monospace;
+		  }
+		  .recent{
+			font-family: 'Share Tech Mono', monospace;
+			font-size: 45px;
+		  }
+		  .test .swiper-slide {
+			text-align: center;
+			font-size: 24px;
+			background: #ae0000;
+			height:80vh;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		  }
+		  
+		  .clients .image, .clients .image-1{
+			  /* max-width:100px;
+			  height: 75px; */
+			  margin:5px;
+		  }
+		  .image{
+			  width:auto;
+			height:70px;
+			}
+			.image-1 img{
+				width: 95px;
+				height: auto;
+			
+			}
+		
+  .footer{
+	/* position: relative; */
+	width: 100%;
+	height: auto;
+	/* position: relative; */
+	background-position:center;
+	background:url("/images/codeaamy\ footer.png");
+	background-size: cover;
+
+  }
+.footer p{
+	color:white;
+}
+.footer h3{
+	color:white;
+}
+.footer h3:hover{
+	color:gray;
+}
+.footer li{
+	list-style: none;
+	color:white;
+}
+.footer li:hover{
+	color:gray;
+}
+.footer li a{
+	text-decoration: none;
+	color:white;
+}
+.footer li a:hover{
+	color:black;
+}
+.foot li{
+	margin: 7px;
+}
+.icons li{
+	margin: 7px;
+}
+.icons  img{
+	filter: grayscale(2);
+transition: .3s ease filter;
+}
+.icons li:hover img{
+	filter: grayscale(0);
+}
+/*  */
+  }

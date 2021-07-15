@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Share Tech Mono', monospace; */
+}
+.wrp {
+  overflow-x: hidden;
+}
+.navbar {
+  font-family: "Share Tech Mono", monospace;
+}
+.techno {
+  color: white;
+}
+.techno h1 {
+  text-transform: uppercase;
+  text-decoration-line: underline;
+}
+.contact p {
+  font-size: 15px;
+}
+.apply-form {
+  font-size: 15px;
+  background-color: rgb(240, 238, 238);
+  box-shadow: 0.8em 0.8em 1em rgba(13, 5, 37, 0.4);
+}
+.footer {
+  background: black;
+  color: white;
+  margin-top: 15px;
+}
+.links li {
+  list-style: none;
+}
+.links li a {
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 676px) {
+  .navbar {
+    z-index: 1000;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+    /* font-weight: bold; */
+    font-family: "Share Tech Mono", monospace;
+  }
+  .collapse {
+    margin-left: 55%;
+  }
+  .techno {
+    color: white;
+  }
+  .techno h1 {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+  }
+  .contact p {
+    font-size: 20px;
+    color: rgb(2, 2, 34);
+  }
+  .apply-form {
+    width: 45vw;
+    font-size: 18px;
+    background-color: rgb(240, 238, 238);
+    box-shadow: 0.8em 0.8em 1em rgba(13, 5, 37, 0.4);
+  }
+  .footer {
+    background: black;
+    color: white;
+  }
+  .links li {
+    list-style: none;
+  }
+  .links li a {
+    color: white;
+    text-decoration: none;
+  }
+}

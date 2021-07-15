@@ -1,0 +1,188 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montaga', serif;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.navbar-brand img{
+    width:100px;
+    height: auto;
+  }
+.wrp {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+.navbar{
+    z-index: 1000;   
+    justify-content: space-between;
+}
+
+.navbar{
+    background-color:rgb(9, 9, 39);
+   
+}
+.techno{
+    background-color: rgb(2, 2, 34);
+    color:white;
+}
+.techno h1{
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 30px;
+}
+.about h1{
+    color:rgb(2, 2, 34);
+    font-weight: 500;
+    font-size: 25px;
+}
+.about{
+    width: 95vw;
+    background-color: rgb(240, 238, 238);
+    box-shadow:0.8em 0.8em 1em rgba(13, 5, 37, 0.4);
+}
+.about h3{
+    font-size: 30px;
+    color:rgb(241, 109, 0);
+    font-weight: 600;
+    font-size: 20px;
+}
+.techno h4{
+    color:rgb(241, 109, 0);
+    font-weight: 600;
+    font-size: 20px;
+}
+.key{
+    width: 95vw;
+    background-color: rgb(240, 238, 238);
+    box-shadow:0.8em 0.8em 1em rgba(13, 5, 37, 0.4);
+}
+.key h1{
+    color: rgb(2, 2, 34);
+    font-weight: 600;
+    font-size: 25px;
+}
+.key h3{
+    color:rgb(241, 109, 0);
+    font-weight: 600;
+    font-size: 20px;
+}
+.about p{
+    font-size: 15px;
+}
+.about img{
+    width: 300px;
+    height: auto;
+}
+.footer p{
+    font-size: 12px;
+    min-width:16vw;
+}
+.footer  li{list-style: none; justify-content: center; font-size: 12px;}
+.footer{
+    font-family: 'Akaya Telivigala', cursive;
+    position: relative;
+    background:url("img/footer.jpg");
+    color:white;
+    /* background-color:rgb(2, 2, 34); */
+    font-size: 20px;
+}
+.footer a{
+    color: white;
+}
+.footer a:hover{
+    color:rgb(241, 109, 0);
+}
+.footer h6{
+    text-align: center;
+  }
+
+
+@media(min-width:990px){
+    .navbar-brand img{
+        width:100px;
+        height: auto;
+      }
+    .navbar{
+        z-index: 1000;   
+        justify-content: space-between;
+        height: 80px;
+        }
+        .collapse{
+            margin-left: 60vw;
+        }
+        .techno{
+            background-color: rgb(2, 2, 34);
+            color:white;
+        }
+        .techno h1{
+            text-transform: uppercase;
+            text-decoration-line: underline;
+            font-size: 40px;
+        }
+        .about{
+            width: 95vw;
+            background-color: rgb(240, 238, 238);
+            box-shadow:0.8em 0.8em 1em rgba(13, 5, 37, 0.4);
+        }
+        .about h1{
+            color:rgb(2, 2, 34);
+            font-weight: 500;
+            font-size: 45px;
+        }
+        .about h3{
+            font-size: 25px;
+            color:rgb(241, 109, 0);
+            font-weight: 600;
+        }
+        .techno h4{
+            color:rgb(241, 109, 0);
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .key{
+            width: 95vw;
+            background-color: rgb(240, 238, 238);
+            box-shadow:0.8em 0.8em 1em rgba(13, 5, 37, 0.4);
+        }
+        .key h1{
+            color: rgb(2, 2, 34);
+            font-weight: 600;
+            font-size: 40px;
+        }
+        .key h3{
+            color:rgb(241, 109, 0);
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .about p{
+            font-size: 18px;
+        }
+        .about img{
+            width: 400px;
+            height: auto;
+        }
+        .footer p{
+            font-size: 16px;
+            min-width:16vw;
+        }
+        .footer  li{list-style: none; justify-content: center; font-size: 16px;}
+        .footer{
+            font-family: 'Akaya Telivigala', cursive;
+            position: relative;
+            background:url("img/footer.jpg");
+            color:white;
+            /* background-color:rgb(2, 2, 34); */
+            font-size: 20px;
+        }
+        .footer a{
+            color: white;
+        }
+        .footer a:hover{
+            color:rgb(241, 109, 0);
+        }
+}

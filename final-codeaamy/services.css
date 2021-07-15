@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	
+
+  }
+  .wrap{
+	  overflow-x: hidden;
+	  width: 100vw;
+  }
+  .navbar{
+	font-family: 'Share Tech Mono', monospace;
+	}
+    .navbar .nav-item.active .nav-link,
+    .navbar .nav-item:focus .nav-link,
+    .navbar .nav-item:hover .nav-link {
+      
+      text-decoration: underline;
+    }
+    .content{
+                
+        max-width:80vw;
+        padding: 20px;
+    }
+    .content h1{
+        font-size: 20px;
+        color:#ae0000;
+        font-weight: bold;
+        font-family: 'Share Tech Mono', monospace;
+       
+    }
+    .content p{
+        color:grey;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .services{
+        background: black;
+        color:white;
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+    }
+   .services h2, .services-1 h2{
+    font-family: 'Share Tech Mono', monospace;
+   }
+   .services p , .services-1 p{
+       font-family: 'Montserrat',sans-serif;
+   }
+    .info h5{
+        font-size: 12px;
+   }
+   .info p{
+       font-size: 15px;
+   }
+   .services h2{
+       font-size: 20px;
+   }
+   .services-1 h2{
+       font-size: 20px;
+   }
+    .services .info{
+        width: 60vw;
+    }
+    .services .img-1, .services-1 .img-1{
+        width:200px;
+        height: auto;
+    }
+    
+      .services-1 {
+          /* background: peru; */
+          margin-top: -120px;
+          /* color: white; */
+      }
+      .services-1 h2{
+          color:#ae0000;
+          font-weight: bold;
+      }
+      .services .icon, .services-1 .icon{
+          width: 20px;
+          height: auto;
+      }
+      .services-1 .img-1{
+          height: 30vh;
+          width: auto;
+      }
+      .services-1 .uiux-icon{
+          height: 20px;
+          width: auto;
+      }
+      .services-1 .icon1{
+          width:20px;
+          height: auto;
+      }
+      
+      
+     
+
+    .footer{
+        /* position: relative; */
+        width: 100%;
+        height: auto;
+        /* position: relative; */
+        background-position:center;
+        background:url("/images/codeaamy\ footer.png");
+        background-size: cover;
+    
+      }
+    .footer p{
+        color:white;
+    }
+    .footer h3{
+        color:white;
+    }
+    .footer h3:hover{
+        color:gray;
+    }
+    .footer li{
+        list-style: none;
+        color:white;
+    }
+    .footer li:hover{
+        color:gray;
+    }
+    .footer li a{
+        text-decoration: none;
+        color:white;
+    }
+    .footer li a:hover{
+        color:black;
+    }
+    .foot li{
+        margin: 7px;
+    }
+    .icons li{
+        margin: 7px;
+    }
+    .icons  img{
+        transition: transform 1s ease-in-out;
+    }
+    .icons li:hover img{
+        transform: scale(1.3);
+    }
+    @media(min-width:576px){
+        .navbar{
+            z-index: 1000;   
+            justify-content: space-between;
+            height: 60px;
+            width: 100vw;
+            font-family: 'Share Tech Mono', monospace;
+            }
+            .collapse{
+                margin-left: 38%;
+            }
+            .navbar .nav-item.active .nav-link,
+            .navbar .nav-item:focus .nav-link,
+            .navbar .nav-item:hover .nav-link {
+              
+              text-decoration: underline;
+            }
+            .navbar .navbar-brand,
+            .navbar .navbar-text {
+                /* color: #d11d1d; */
+                font-size: 20px;
+            }
+            
+            /* change the link color */
+            .navbar .navbar-nav .nav-link {
+                /* color:#d11d1d; */
+                font-size:20px;
+            }
+            .content{
+                
+                max-width:80vw;
+            }
+            .content h1{
+                font-size: 35px;
+                color:#ae0000;
+                font-weight: bold;
+                text-transform: lowercase;
+                font-family: 'Share Tech Mono', monospace;
+
+            }
+            .content p{
+                color:grey;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .services{
+                background: black;
+                color:white;
+                clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 94%);
+            }
+           
+            .services .info{
+                width: 50vw;
+            }
+            .services .img-1, .services-1 .img-1{
+                width:400px;
+                height: auto;
+            }
+            .footer{
+                /* position: relative; */
+                width: 100%;
+                height: auto;
+                /* position: relative; */
+                background-position:center;
+                background:url("/images/codeaamy\ footer.png");
+                background-size: cover;
+            
+              }
+              .info h5{
+                font-size: 16px;
+           }
+           .info p{
+               font-size: 20px;
+           }
+           .services h2{
+               font-size: 27px;
+           }
+           .services-1 h2{
+               font-size: 27px;
+           }
+              .services h2, .services-1 h2{
+                font-family: 'Share Tech Mono', monospace;
+               }
+               .services p , .services-1 p{
+                   font-family: 'Montserrat',sans-serif;
+               }
+              .services-1 {
+                  /* background: peru; */
+                  margin-top: -120px;
+                  /* color: white; */
+              }
+              .services-1 h2{
+                  color:#ae0000;
+                  font-weight: bold;
+              }
+              .services .icon, .services-1 .icon{
+                  width: 75px;
+                  height: auto;
+              }
+              .services-1 .img-1{
+                  height: 50vh;
+                  width: auto;
+              }
+              .services-1 .uiux-icon{
+                  height: 50px;
+                  width: auto;
+              }
+              .services-1 .icon1{
+                  width:50px;
+                  height: auto;
+              }
+            .footer p{
+                color:white;
+            }
+            .footer h3{
+                color:white;
+            }
+            .footer h3:hover{
+                color:gray;
+            }
+            .footer li{
+                list-style: none;
+                color:white;
+            }
+            .footer li:hover{
+                color:gray;
+            }
+            .footer li a{
+                text-decoration: none;
+                color:white;
+            }
+            .footer li a:hover{
+                color:black;
+            }
+            .foot li{
+                margin: 7px;
+            }
+            .icons li{
+                margin: 7px;
+            }
+            .icons  img{
+                transition: transform 1s ease-in-out;
+            }
+            .icons li:hover img{
+                transform: scale(1.3);
+            }
+    }

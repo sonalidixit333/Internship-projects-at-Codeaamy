@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <div class="wrp">
+    <header class="navbar" id="navbar">
+      <div class="brand-title">Heaven Beauty Parlour</div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="index.html">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+              <li><a href="#services#services">Services</a></li>
+              <li><a href="index.html#brands">Brands</a></li>
+              <!-- <li><a href="index.html/#courses">Courses</a></li> -->
+              <li><a href="index.html#contact">Contact</a></li>
+
+            </ul>
+          </div>
+
+  </header>
+  <script>
+    $(document).ready(function(){
+            $(window).scroll(function() { // check if scroll event happened
+              if ($(document).scrollTop() > $(window).height()) { // check if user scrolled more than 50 from top of the browser window
+                $(".navbar").css("background-color", "black"); 
+                $(".navbar ul li a").css("color","peachpuff")
+                $(".brand-title").css("color","peachpuff");
+                $(".toggle-button .bar").css("background-color","peachpuff");
+                // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+              } else {
+                $(".navbar").css("background-color", "peachpuff");
+                $(".navbar ul li a").css("color","black");
+                $(".brand-title").css("color","black");
+                $(".toggle-button .bar").css("background-color","black");
+                 
+             
+                // if not, change it back to transparent
+              }
+            });
+          });
+  </script>
+
+<section class="services mt-5 pt-5 mr-auto ml-auto justify-content-center" id="services">
+  
+<h1 class=" text-center p-xl-3 justify-content-center" data-aos="zoom-in">Our Services</h1>
+  <div class="row justify-content-center m-5" >
+    
+      <div class="col-12 col-xl-3 col-sm-10 card m-xl-5 mt-sm-3 " >
+       
+          <img src="/img/bridal.jpg"  alt="">
+       
+        <div class="text justify-content-center pt-3">
+          <h3 >Bridal</h3>
+          <li>3 Hair </li>
+          <li>3 Costume</li>
+          <li>3 Make Up</li>
+          <button class="price mt-2 mb-3">Rs.25000/-</button>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-sm-10 card m-xl-5  mt-sm-3 ">
+       
+          <img src="/img/engagement.jpg" alt="">
+        
+        <div class="text pt-3">
+          <h3>Engagement</h3>
+          <li>Costume</li>
+          <li>Hair</li>
+          <li>Make Up</li>
+          <button class="price mt-3 mb-3">Rs.5000/-</button>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-sm-10  card m-xl-5  mt-sm-3  ">
+       
+          <img src="/img/birthday.jpg"  alt="">
+        
+        <div class="text pt-3">
+          <h3 >Birthday</h3>
+          <li>Hair</li>
+          <li>Make Up</li>
+          <button class="price mt-3 mb-3">Rs.3000/-</button>
+        </div>
+      </div>
+      
+      
+  </div>
+ 
+  <div class="row justify-content-center m-5">
+
+    <div class="col-12 col-xl-3 col-sm-10  card m-xl-5  mt-sm-3 ">
+        
+          <img src="/img/modelling.jpg"  alt="">
+        
+        <div class="text pt-3">
+          <h3>Modelling</h3>
+          <li>Hair</li>
+          <li>Make Up</li>
+          <button class="price mt-3 mb-3">Rs.4000/-</button>
+        </div>
+      </div>
+
+    <div class="col-12 col-xl-3 col-sm-10 card m-xl-5  mt-sm-3 ">
+       
+      <img src="/img/photoshoot.jpg" class="br" alt="">
+    
+    <div class="text justify-content-center pt-3">
+      <h3>Photoshoot</h3>
+      <li>Hair</li>
+      <li>Costume</li>
+      <li>Make Up</li>
+      <li>touch up</li>
+      <button class="price mt-3 mb-3">Rs.5000/-</button>
+    </div>
+  </div>
+    
+    <div class="col-12 col-xl-3 col-sm-10 card m-xl-5  mt-sm-3 ">
+      
+        <img src="/img/hair.jpg" class="cr" alt="">
+      
+      <div class="text pt-3 pb-5">
+        <h3>Hair Coloring</h3>
+        <li>Global Hair Colour</li>
+        <li>Root Touch Up</li>
+        <h3>Advanced Coloring</h3>
+        <li>Global Hair Streaking</li> 
+        <li> Crown Hair Streaking</li>
+        <li>Slicing</li>  
+        <li>Dual Glam</li> 
+        <li>Ombre</li>
+        <li>One Streak</li>
+      </div>
+    </div>
+  </div>
+   
+<div class="row justify-content-center m-5">
+       <div class="col-12 col-xl-3 col-sm-10 m-xl-5  mt-sm-3  card ">
+     
+        <img src="/img/manped.jpg" class="skin" alt="">
+     
+      <div class="text pt-3">
+        <h3>Manicure/Pedicure</h3>
+        <li>Basic Manicure</li>
+        <li>Basic Pedicure</li>
+        <li>Signature Manicure</li>
+        <li>Signature Pedicure</li>
+        <li>Flavoured Gelly Spa Manicure</li>
+        <li>Flavoured Gelly Spa Pedicure</li>
+       
+      </div>
+    </div>
+    <div class="col-12 col-xl-3 col-sm-10 m-xl-5  mt-sm-3  card ">
+      
+        <img src="/img/clean up.jpg" class="skin" alt="">
+     
+      <div class="text pt-3 pb-5">
+        <h3>Skin Clean Up</h3>
+        <li>Basic</li>  
+        <li>Insta Glow</li> 
+        <li>Snow White</li> 
+        <li>Pearl</li>
+        <li>Choclate</li>
+        <li>Tan Clear</li>
+        <li>Purity</li>
+        <li>Meladerm</li>
+        <li>Whitening</li>
+        <li>Tangy</li>
+      </div>
+    </div>
+<div class="col-12 col-xl-3 col-sm-10 card m-xl-5  mt-sm-3 ">
+    
+  <img src="/img/facial.jpg" class="skin" alt="">
+
+<div class="text justify-content-center pt-3 pb-5">
+  <h3 >Facial</h3>
+    <li>Basic</li>
+  <li>Revival</li>
+  <li>Pearl</li>
+  <li>Purifying</li>
+  <li>Gold</li>
+  <li>Tan Clear</li>
+  <li>Age Less</li>
+  <li>Rejuvenate</li>
+  <li>Radiance & Signature</li>
+ <li> Whitening & Special Bridal</li>
+ 
+</div>
+
+</div>
+
+</div>
+<div class="row justify-content-center m-5">
+  <div class="col-12 col-xl-3 col-sm-10 card m-xl-5  mt-sm-3  ">
+  
+    <img src="/img/fantasy.jpg" class="cr" alt="">
+  
+  <div class="text pt-3 pb-5">
+    <h3>fantasy make up</h3>
+    <li>Global Hair Colour</li>
+    <li>Root Touch Up</li>
+    <li>Global Hair Streaking</li> 
+    <li> Crown Hair Streaking</li>
+    <li>Slicing</li>  
+  </div>
+</div>
+<div class="col-12 col-xl-3 col-sm-10 m-xl-5 card  mt-sm-3  ">
+ 
+    <img src="/img/body.jpg" class="skin" alt="">
+ 
+  <div class="text pt-3">
+    <h3>body make up</h3>
+    <li>Basic Manicure</li>
+    <li>Basic Pedicure</li>
+    <li>Signature Manicure</li>
+    <li>Signature Pedicure</li>
+    <li>Flavoured Gelly Spa Manicure</li>
+    <li>Flavoured Gelly Spa Pedicure</li>
+   
+  </div>
+</div>
+</div>
+</section>
+<section class="footer">
+  <div class="row m-auto justify-content-center">
+    <div class="col-12 col-xl-5 col-sm-12 m-3 card">
+      <div class="img-wrap ">
+        <img src="/img/insta icon.png" class="insta"alt="">
+      </div>
+    </div> 
+    <div class="col-12 col-xl-5 col-sm-12 m-3 card">
+     <div class="img-wrap ">
+        <img src="/img/Facebook icon (1).png" class="fab" alt="">
+     </div>
+    </div>      
+  </div>
+  <div class="row justify-content-center mt-5">
+    <h5 class="text-center p-3">Copyright ©2020 All rights reserved | Made with ❤ by <span style="color:red">CODEAAMY</span>. </h5>
+  </div>
+</section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:200,
+        duration:500
+  });
+</script>
+  <script src="/script.js"></script>
+  </div>
+   
+</body>
+</html>
